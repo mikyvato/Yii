@@ -23,3 +23,155 @@ Stack trace:
 #8 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
 #9 /var/www/Yii/prueba/index.php(13): CApplication->run()
 #10 {main} REQUEST_URI=/Yii/prueba/index.php?r=saludo/index
+2012/12/08 16:41:47 [error] [exception.CException] exception 'CException' with message 'TareaController cannot find the requested view "index".' in /var/www/yii-frame/framework/web/CController.php:875
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CController.php(779): CController->renderPartial('index', NULL, true)
+#1 /var/www/Yii/prueba/protected/controllers/TareaController.php(8): CController->render('index')
+#2 /var/www/yii-frame/framework/web/actions/CInlineAction.php(50): TareaController->actionIndex()
+#3 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-frame/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-frame/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-frame/framework/web/CWebApplication.php(328): CController->run('index')
+#7 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('tarea/index')
+#8 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#9 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/Yii/prueba/index.php?r=tarea/index
+2012/12/08 16:52:38 [error] [php] include(Tareas.php): failed to open stream: No such file or directory (/var/www/yii-frame/framework/YiiBase.php:396)
+Stack trace:
+#0 /var/www/Yii/prueba/protected/controllers/TareaController.php(9): spl_autoload_call()
+#1 /var/www/yii-frame/framework/web/actions/CInlineAction.php(50): TareaController->actionIndex()
+#2 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#3 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#4 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#6 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#7 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#8 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/index
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (9)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 16:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/yii-frame/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CController.php(262): CController->missingAction('view')
+#1 /var/www/yii-frame/framework/web/CWebApplication.php(328): CController->run('view')
+#2 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('tarea/view')
+#3 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Yii/prueba/index.php?r=tarea/view&id=1
+2012/12/08 17:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/yii-frame/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CController.php(262): CController->missingAction('view')
+#1 /var/www/yii-frame/framework/web/CWebApplication.php(328): CController->run('view')
+#2 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('tarea/view')
+#3 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Yii/prueba/index.php?r=tarea/view&id=1
+2012/12/08 17:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/yii-frame/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CController.php(262): CController->missingAction('view')
+#1 /var/www/yii-frame/framework/web/CWebApplication.php(328): CController->run('view')
+#2 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('tarea/view')
+#3 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Yii/prueba/index.php?r=tarea/view&id=2
+2012/12/08 17:37:06 [error] [php] Use of undefined constant id - assumed 'id' (/var/www/Yii/prueba/protected/views/tarea/index.php:20)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CController.php(866): TareaController->renderFile()
+#1 /var/www/yii-frame/framework/web/CController.php(779): TareaController->renderPartial()
+#2 /var/www/Yii/prueba/protected/controllers/TareaController.php(11): TareaController->render()
+#3 /var/www/yii-frame/framework/web/actions/CInlineAction.php(50): TareaController->actionIndex()
+#4 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#5 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#6 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#7 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#8 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#9 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#10 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/index
+in /var/www/Yii/prueba/protected/views/tarea/index.php (20)
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (11)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:44:34 [error] [php] Undefined index: Tares (/var/www/Yii/prueba/protected/controllers/TareaController.php:23)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#3 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#4 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#6 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#7 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/edit&id=1
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (23)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:44:58 [error] [php] Undefined index: Tarea (/var/www/Yii/prueba/protected/controllers/TareaController.php:23)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#3 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#4 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#6 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#7 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/edit&id=1
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (23)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:45:00 [error] [php] Undefined index: Tarea (/var/www/Yii/prueba/protected/controllers/TareaController.php:23)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#3 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#4 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#6 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#7 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/edit&id=1
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (23)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:45:09 [error] [php] Undefined index: Tarea (/var/www/Yii/prueba/protected/controllers/TareaController.php:23)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#3 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#4 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#6 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#7 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/edit&id=2
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (23)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:45:34 [error] [php] Undefined index: tarea (/var/www/Yii/prueba/protected/controllers/TareaController.php:23)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#3 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#4 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#6 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#7 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/edit&id=2
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (23)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:45:35 [error] [php] Undefined index: tarea (/var/www/Yii/prueba/protected/controllers/TareaController.php:23)
+Stack trace:
+#0 /var/www/yii-frame/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii-frame/framework/web/CController.php(278): TareaController->runAction()
+#3 /var/www/yii-frame/framework/web/CController.php(257): TareaController->runActionWithFilters()
+#4 /var/www/yii-frame/framework/web/CWebApplication.php(328): TareaController->run()
+#5 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#6 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#7 /var/www/Yii/prueba/index.php(13): CWebApplication->run()
+REQUEST_URI=/Yii/prueba/index.php?r=tarea/edit&id=2
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (23)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:45:59 [warning] [application] Failed to set unsafe attribute "nombre".
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (27)
+in /var/www/Yii/prueba/index.php (13)
+2012/12/08 17:45:59 [warning] [application] Failed to set unsafe attribute "descripcion".
+in /var/www/Yii/prueba/protected/controllers/TareaController.php (27)
+in /var/www/Yii/prueba/index.php (13)
