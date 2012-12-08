@@ -1,0 +1,25 @@
+2012/12/07 20:57:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "saludo/index".' in /var/www/yii-frame/framework/web/CWebApplication.php:332
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('saludo/index')
+#1 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#2 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/Yii/prueba/index.php?r=saludo/index
+2012/12/07 20:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Saludo/index".' in /var/www/yii-frame/framework/web/CWebApplication.php:332
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('Saludo/index')
+#1 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#2 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/Yii/prueba/index.php?r=Saludo/index
+2012/12/07 21:02:33 [error] [exception.CException] exception 'CException' with message 'SaludoController cannot find the requested view "index".' in /var/www/yii-frame/framework/web/CController.php:875
+Stack trace:
+#0 /var/www/yii-frame/framework/web/CController.php(779): CController->renderPartial('index', Array, true)
+#1 /var/www/Yii/prueba/protected/controllers/SaludoController.php(9): CController->render('index', Array)
+#2 /var/www/yii-frame/framework/web/actions/CInlineAction.php(50): SaludoController->actionIndex()
+#3 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /var/www/yii-frame/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii-frame/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii-frame/framework/web/CWebApplication.php(328): CController->run('index')
+#7 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('saludo/index')
+#8 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#9 /var/www/Yii/prueba/index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/Yii/prueba/index.php?r=saludo/index
