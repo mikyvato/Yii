@@ -32,5 +32,27 @@ class TareaController extends Controller{
         
         $this->render('edit',array('model'=>$model));
     }
+    
+    public function actionAdd (){
+        $model = new Tarea();
+//        echo "<pre>";
+//        print_r($_POST['Tarea']);
+//        echo "</pre>";
+//        Yii::app()->end();
+        if (isset($_POST['Tarea'])){
+            $model->attributes=$_POST['Tarea'];
+        
+            if ($model->save())
+                $this->redirect(array('view','id'=>$model->id));
+        }
+        
+        $this->render('edit',array('model'=>$model));
+    }
+    
+    public function actionDel ($id){
+        $model = Tarea::model()->findByPk($id);
+        $model->delete();
+        $this->redirect(array('index'));
+    }
 }
 ?>
