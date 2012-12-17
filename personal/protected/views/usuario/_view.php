@@ -27,6 +27,16 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ciudad_idciudad')); ?>:</b>
 	<?php echo CHtml::encode($data->ciudadIdciudad->nombres); ?>
 	<br />
+	
+        <b><?php echo CHtml::encode($data->getAttributeLabel('ciudad_idciudad')); ?>:</b>
+	<?php 
+            foreach ($data->experiencias as $exp){
+                echo $exp->jefeInmediato."<br>";
+                echo $exp->empresa."<br>";
+            } 
+                
+            ?>
+	<br />
 
 
 </div>

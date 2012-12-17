@@ -74,7 +74,7 @@ class Experiencia extends CActiveRecord
 			'inicio' => 'Inicio',
 			'finalizacion' => 'Finalizacion',
 			'jefeInmediato' => 'Jefe Inmediato',
-			'usuario_idusuario' => 'Usuario Idusuario',
+			'usuario_idusuario' => 'Usuario',
 		);
 	}
 

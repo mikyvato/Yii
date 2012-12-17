@@ -84,7 +84,7 @@ class Usuario extends CActiveRecord
 			'email' => 'Email',
 			'estado' => 'Estado',
 			'genero' => 'Genero',
-			'ciudad_idciudad' => 'Ciudad Idciudad',
+			'ciudad_idciudad' => 'Ciudad',
 		);
 	}
 

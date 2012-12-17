@@ -21,7 +21,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usuario_idusuario')); ?>:</b>
-	<?php echo CHtml::encode($data->usuario_idusuario); ?>
+	<?php echo CHtml::encode($data->usuarioIdusuario->nombres); ?>
 	<br />
 
 
