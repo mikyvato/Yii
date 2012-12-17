@@ -1,0 +1,21 @@
+2012/12/16 21:05:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii-frame/framework/db/CDbConnection.php:348
+Stack trace:
+#0 /var/www/yii-frame/framework/db/CDbConnection.php(297): CDbConnection->open()
+#1 /var/www/yii-frame/framework/db/CDbConnection.php(275): CDbConnection->setActive(true)
+#2 /var/www/yii-frame/framework/base/CModule.php(372): CDbConnection->init()
+#3 /var/www/yii-frame/framework/base/CModule.php(86): CModule->getComponent('db')
+#4 /var/www/yii-frame/framework/gii/generators/model/ModelCode.php(52): CModule->__get('db')
+#5 /var/www/yii-frame/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/yii-frame/framework/gii/CCodeGenerator.php(149): CFormModel->__construct()
+#7 /var/www/yii-frame/framework/gii/CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 /var/www/yii-frame/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii-frame/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#10 /var/www/yii-frame/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii-frame/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii-frame/framework/web/CWebApplication.php(328): CController->run('')
+#13 /var/www/yii-frame/framework/web/CWebApplication.php(121): CWebApplication->runController('gii/model')
+#14 /var/www/yii-frame/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#15 /var/www/Yii/generador/index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/Yii/generador/index.php?r=gii/model
+2012/12/16 21:08:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'datos1.tarea' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tarea`.
+in /var/www/Yii/generador/index.php (13)

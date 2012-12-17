@@ -7,8 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Accesto a Datos de la DB',
-        
+	'name'=>'Probando el Generador de Yii',
+
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -46,15 +46,12 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
-                /*
+		
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
-                 * 
-                 */
 		// uncomment the following to use a MySQL database
-		
+		*/
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=datos1',
 			'emulatePrepare' => true,
